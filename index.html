@@ -12,63 +12,40 @@
   </header>
     
 <main>
-<!--    --
+    
 <!--Section 1-->
-<!--<section>-->
   <div id="sink" class="slider-box">
     <figure>
       <div id="sink_divisor"></div>
     </figure>
     <input type="range" min="0" max="100" value="0" id="sink_slider" oninput="moveSink_Divisor()">
   </div>
-<!--</section>-->
 
 <!--Section 2-->
-<!--<section>-->
   <div id="island" class="slider-box">
     <figure>
       <div id="island_divisor"></div>
     </figure>
     <input type="range" min="0" max="100" value="0" id="island_slider" oninput="moveIsland_Divisor()">
   </div>
-<!--</section>-->
 
 <!--Section 3-->
-<!--<section>-->
   <div id="oven" class="slider-box">
     <figure>
       <div id="oven_divisor"></div>
     </figure>
     <input type="range" min="0" max="100" value="0" id="oven_slider" oninput="moveOven_Divisor()">
   </div>
-<!--</section>-->
 
 </main>
-
-  <script type="text/javascript">
-    var sink_divisor = document.getElementById("sink_divisor"),
-    sink_slider = document.getElementById("sink_slider");
-    function moveSink_Divisor() {
-      sink_divisor.style.width = sink_slider.value+"%";
-    }
+<!--js scripts containing slider functions-->
+  <script src="./js/scripts.js"></script>
   
-    var island_divisor = document.getElementById("island_divisor"),
-    island_slider = document.getElementById("island_slider");
-    function moveIsland_Divisor() {
-      island_divisor.style.width = island_slider.value+"%";
-    }
-
-    var oven_divisor = document.getElementById("oven_divisor"),
-    oven_slider = document.getElementById("oven_slider");
-    function moveOven_Divisor() {
-      oven_divisor.style.width = oven_slider.value+"%";
-    }
-    </script>
-
 </body>
   
   <footer>
     <address>Made 22 Feb 2020<br>
       by Scot Nielson.</address>
   </footer>
+  
 </html>
