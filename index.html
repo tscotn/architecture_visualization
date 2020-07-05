@@ -3,313 +3,72 @@
     
 <head>
     <title>Architecture Vizualizer</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<!-- Main content -->
-
 <body>
-    <header>
-        <h1>Kitchen Prototype</h1>
-    </header>
+  <header>
+    <h1>Kitchen Prototype</h1>
+  </header>
     
 <main>
-
+<!--    --
 <!--Section 1-->
-<section>
-<div id="sink">
-  <figure>
-    <div id="sink_divisor"></div>
-  </figure>
-  <input type="range" min="0" max="100" value="0" id="sink_slider" oninput="moveSink_Divisor()">
-</div>
+<!--<section>-->
+  <div id="sink" class="slider-box">
+    <figure>
+      <div id="sink_divisor"></div>
+    </figure>
+    <input type="range" min="0" max="100" value="0" id="sink_slider" oninput="moveSink_Divisor()">
+  </div>
+<!--</section>-->
 
-<style>
-div#sink {
-  width: 52.5vw;
-  height: 70vw;
-  max-width: 300px;
-  max-height: 400px;
-  overflow: hidden; }
-div#sink figure {
-  background-image: url('/Users/scot/Desktop/GitHub/architecture_visualizer/assets/images/sink.jpg');
-  background-size: cover;
-  position: relative;
-  font-size: 0;
-  width: 100%; 
-  height: 100%;
-  margin: 0; 
-}
-div#sink figure > img {
-  position: relative;
-  width: 100%;
-}
-div#sink figure div {
-  background-image: url('/Users/scot/Desktop/GitHub/architecture_visualizer/assets/images/sink_after.jpg');
-  background-size: cover;
-  position: absolute;
-  width: 100%;
-  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
-  overflow: hidden;
-  bottom: 0;
-  height: 100%;
-}
-
-input[type=range]{
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  position: relative;
-  top: -2rem; left: -2%;
-  background-color: rgba(255,255,255,0.1);
-  width: 102%; 
-}
-input[type=range]:focus { 
-  outline: none; 
-}
-input[type=range]:active { 
-  outline: none;  
-}
-
-input[type=range]::-moz-range-track { 
-  -moz-appearance:none;
-    height:15px;
-    width: 98%;
-    background-color: rgba(255,255,255,0.1); 
-    position: relative;
-    outline: none;    
- }
-input[type=range]::active { 
-  border: none; 
-  outline: none;
-}
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance:none;
-    width: 20px; height: 15px;   
-    background: #fff;
-    border-radius: 0;
-   }
-input[type=range]::-moz-range-thumb {
-  -moz-appearance: none;
-  width: 20px;
-  height: 15px;
-  background: #fff;
-  border-radius: 0;
-     }   
-input[type=range]:focus::-webkit-slider-thumb {
-    background: rgba(255,255,255,0.5);
-   }
-input[type=range]:focus::-moz-range-thumb {
-    background: rgba(255,255,255,0.5);
-   }
-</style>
-</section>
-
-<!--#2-->
-<section>
-<div id="island">
-  <figure>
-    <div id="island_divisor"></div>
-  </figure>
-  <input type="range" min="0" max="100" value="0" id="island_slider" oninput="moveIsland_Divisor()">
-</div>
-
-<style>
-div#island {
-  width: 52.5vw;
-  height: 70vw;
-  max-width: 300px;
-  max-height: 400px;
-  overflow: hidden; }
-div#island figure {
-  background-image: url('/Users/scot/Desktop/GitHub/architecture_visualizer/assets/images/floor.jpg');
-  background-size: cover;
-  position: relative;
-  font-size: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-div#island figure > img {
-  position: relative;
-  width: 100%;
-}
-div#island figure div {
-  background-image: url('/Users/scot/Desktop/GitHub/architecture_visualizer/assets/images/floor_after.jpg');
-  background-size: cover;
-  position: absolute;
-  width: 100%;
-  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
-  overflow: hidden;
-  bottom: 0;
-  height: 100%;
-}
-
-input[type=range]{
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  position: relative;
-  top: -2rem; left: -2%;
-  background-color: rgba(255,255,255,0.1);
-  width: 102%;
-}
-input[type=range]:focus {
-  outline: none;
-}
-input[type=range]:active {
-  outline: none;
-}
-
-input[type=range]::-moz-range-track {
-  -moz-appearance:none;
-    height:15px;
-    width: 98%;
-    background-color: rgba(255,255,255,0.1);
-    position: relative;
-    outline: none;
- }
-input[type=range]::active {
-  border: none;
-  outline: none;
-}
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance:none;
-    width: 20px; height: 15px;
-    background: #fff;
-    border-radius: 0;
-   }
-input[type=range]::-moz-range-thumb {
-  -moz-appearance: none;
-  width: 20px;
-  height: 15px;
-  background: #fff;
-  border-radius: 0;
-     }
-input[type=range]:focus::-webkit-slider-thumb {
-    background: rgba(255,255,255,0.5);
-   }
-input[type=range]:focus::-moz-range-thumb {
-    background: rgba(255,255,255,0.5);
-   }
-</style>
-</section>
+<!--Section 2-->
+<!--<section>-->
+  <div id="island" class="slider-box">
+    <figure>
+      <div id="island_divisor"></div>
+    </figure>
+    <input type="range" min="0" max="100" value="0" id="island_slider" oninput="moveIsland_Divisor()">
+  </div>
+<!--</section>-->
 
 <!--Section 3-->
-<section>
-<div id="oven">
-  <figure>
-    <div id="oven_divisor"></div>
-  </figure>
-  <input type="range" min="0" max="100" value="0" id="oven_slider" oninput="moveOven_Divisor()">
-</div>
-
-<style>
-div#oven {
-  width: 52.5vw;
-  height: 70vw;
-  max-width: 300px;
-  max-height: 400px;
-  overflow: hidden; }
-div#oven figure {
-  background-image: url('/Users/scot/Desktop/GitHub/architecture_visualizer/assets/images/oven.jpg');
-  background-size: cover;
-  position: relative;
-  font-size: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-div#oven figure > img {
-  position: relative;
-  width: 100%;
-}
-div#oven figure div {
-  background-image: url('/Users/scot/Desktop/GitHub/architecture_visualizer/assets/images/oven_after.jpg');
-  background-size: cover;
-  position: absolute;
-  width: 100%;
-  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
-  overflow: hidden;
-  bottom: 0;
-  height: 100%;
-}
-
-input[type=range]{
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  position: relative;
-  top: -2rem; left: -2%;
-  background-color: rgba(255,255,255,0.1);
-  width: 102%;
-}
-input[type=range]:focus {
-  outline: none;
-}
-input[type=range]:active {
-  outline: none;
-}
-
-input[type=range]::-moz-range-track {
-  -moz-appearance:none;
-    height:15px;
-    width: 98%;
-    background-color: rgba(255,255,255,0.1);
-    position: relative;
-    outline: none;
- }
-input[type=range]::active {
-  border: none;
-  outline: none;
-}
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance:none;
-    width: 20px; height: 15px;
-    background: #fff;
-    border-radius: 0;
-   }
-input[type=range]::-moz-range-thumb {
-  -moz-appearance: none;
-  width: 20px;
-  height: 15px;
-  background: #fff;
-  border-radius: 0;
-     }
-input[type=range]:focus::-webkit-slider-thumb {
-    background: rgba(255,255,255,0.5);
-   }
-input[type=range]:focus::-moz-range-thumb {
-    background: rgba(255,255,255,0.5);
-   }
-</style>
-</section>
+<!--<section>-->
+  <div id="oven" class="slider-box">
+    <figure>
+      <div id="oven_divisor"></div>
+    </figure>
+    <input type="range" min="0" max="100" value="0" id="oven_slider" oninput="moveOven_Divisor()">
+  </div>
+<!--</section>-->
 
 </main>
 
-<script type="text/javascript">
-var sink_divisor = document.getElementById("sink_divisor"),
-sink_slider = document.getElementById("sink_slider");
-function moveSink_Divisor() {
-    sink_divisor.style.width = sink_slider.value+"%";
-}
+  <script type="text/javascript">
+    var sink_divisor = document.getElementById("sink_divisor"),
+    sink_slider = document.getElementById("sink_slider");
+    function moveSink_Divisor() {
+      sink_divisor.style.width = sink_slider.value+"%";
+    }
+  
+    var island_divisor = document.getElementById("island_divisor"),
+    island_slider = document.getElementById("island_slider");
+    function moveIsland_Divisor() {
+      island_divisor.style.width = island_slider.value+"%";
+    }
 
-var island_divisor = document.getElementById("island_divisor"),
-island_slider = document.getElementById("island_slider");
-function moveIsland_Divisor() {
-    island_divisor.style.width = island_slider.value+"%";
-}
-
-var oven_divisor = document.getElementById("oven_divisor"),
-oven_slider = document.getElementById("oven_slider");
-function moveOven_Divisor() {
-    oven_divisor.style.width = oven_slider.value+"%";
-}
-
-</script>
-
+    var oven_divisor = document.getElementById("oven_divisor"),
+    oven_slider = document.getElementById("oven_slider");
+    function moveOven_Divisor() {
+      oven_divisor.style.width = oven_slider.value+"%";
+    }
+    </script>
 
 </body>
-
-<footer>
+  
+  <footer>
     <address>Made 22 Feb 2020<br>
       by Scot Nielson.</address>
-</footer>
+  </footer>
 </html>
